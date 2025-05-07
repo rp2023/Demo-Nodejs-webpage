@@ -46,7 +46,8 @@ step-05 Create CICD pipeline
 ==========================
 step-06 Create new Item (Nodejs job/project)
   - Click on discard old build (Max # of builds to keep "2").
-    ====================###############======================
+
+
 pipeline {
     agent any
     
@@ -91,11 +92,12 @@ pipeline {
         }
     }
 }
+
 ===================##############=======================
 Note: use snipest generator for
 Git checkout use git:Git
 Docker build & push: withDockerRegistry:sets up docker registry endpoint.(username and password and generate script)
 Dependency check: Dependency check:invoke dependancy check.(set arguments and generate script)
-=================================================================
+
 
 
