@@ -39,7 +39,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 =============================#
 step-05 Create CICD pipeline
  1) Install required pluging as follow:
-    - OWASP Plugin
+    - OWASP Plugin(Open Web Application Security Project).
     - docker: docker compose build, docker pipeline,docker plugin,docker build step.
     - NodeJS plugin
 2) Configure maven,docker,dependency check, Nodejs as global tool.
