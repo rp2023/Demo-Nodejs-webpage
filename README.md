@@ -13,12 +13,12 @@ java -version
 
 Install Jenkins
 ========
-
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
+  
 sudo apt-get update
 sudo apt-get install jenkins
 
@@ -39,11 +39,13 @@ exit
 
 step-03 Open jenkins server in browser using VM public ip
 =====================================================
+
 http://public-ip:8080/
 
 
 step-04 Copy jenkins admin paswd
 =========================
+
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 step-05 Create CICD pipeline
@@ -57,6 +59,7 @@ step-05 Create CICD pipeline
 step-06 Create new Item (Nodejs job/project)
 ==========================================
   - Click on discard old build (Max # of builds to keep "2").
+
 
 
 pipeline {
