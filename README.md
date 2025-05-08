@@ -1,15 +1,16 @@
 # Demo-Nodejs-webpage
-My new project
+  My new project
 
 -Steps-01 Jekins Setup
 =======================
-Create AWS EC2 machine with t2.medium(20GB) & connect with gitbash 
+    Create AWS EC2 machine with t2.medium(20GB) & connect with gitbash 
 
 -install java
 ========
-   sudo apt update
-   sudo apt install fontconfig openjdk-17-jre
-   java -version
+
+    sudo apt update
+    sudo apt install fontconfig openjdk-17-jre
+    java -version
 
 Install Jenkins
 ========
@@ -63,9 +64,8 @@ step-06 Create new Item (Nodejs job/project)
 ==========================================
   - Click on discard old build (Max # of builds to keep "2").
 
-    
 
-    pipeline {
+pipeline {
     agent any
     
     tools{
@@ -110,10 +110,10 @@ step-06 Create new Item (Nodejs job/project)
     }
 }
 
-====================================######===========
+=====================================================================================
 
 Note:
-===============
+=========================================================================================
    use snipest generator for
    Git checkout use git:Git
    Docker build & push: withDockerRegistry:sets up docker registry endpoint.(username and password and generate script)
