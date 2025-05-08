@@ -1,11 +1,11 @@
 # Demo-Nodejs-webpage
 My new project
 
-Steps-01 Jekins Setup
+-Steps-01 Jekins Setup
 =======================
 Create AWS EC2 machine with t2.medium(20GB) & connect with gitbash 
 
-install java
+-install java
 ========
 sudo apt update
 sudo apt install fontconfig openjdk-17-jre
