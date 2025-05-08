@@ -13,6 +13,7 @@ Create AWS EC2 machine with t2.medium(20GB) & connect with gitbash
 
 Install Jenkins
 ========
+
     sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
     https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
     echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
@@ -25,29 +26,30 @@ Install Jenkins
 Start jenkins
 ===============
 
-   sudo systemctl enable jenkins
-   sudo systemctl start jenkins
-   sudo systemctl status jenkins
+    sudo systemctl enable jenkins
+    sudo systemctl start jenkins
+    sudo systemctl status jenkins
 
 
 Step-02 Install docker in Jenkins ec2
 ======================================
-   sudo apt update
-   curl -fsSL get.docker.com | /bin/bash
-   sudo usermod -aG docker ubuntu 
-   exit
+
+    sudo apt update
+    curl -fsSL get.docker.com | /bin/bash
+    sudo usermod -aG docker ubuntu 
+    exit
 
 
 step-03 Open jenkins server in browser using VM public ip
 =====================================================
 
-    http://public-ip:8080/
+     http://public-ip:8080/
 
 
 step-04 Copy jenkins admin paswd
 =========================
 
-    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+      sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 step-05 Create CICD pipeline
 =========================
@@ -60,6 +62,8 @@ step-05 Create CICD pipeline
 step-06 Create new Item (Nodejs job/project)
 ==========================================
   - Click on discard old build (Max # of builds to keep "2").
+
+    
 
     pipeline {
     agent any
@@ -106,7 +110,7 @@ step-06 Create new Item (Nodejs job/project)
     }
 }
 
-
+====================================######===========
 
 Note:
 ===============
